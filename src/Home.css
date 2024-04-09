@@ -1,0 +1,41 @@
+
+.carousel-control {
+    width: 55%;
+}
+
+.content {
+    position: relative;
+    left: 17%;
+    width: 60%;
+    margin-top: 170px;
+    margin-bottom: 200px;
+    text-align: center;
+}
+
+.top-heading {
+    margin-bottom: 100px;
+}
+
+.imgHome {
+    position: absolute;
+    width: 40%;
+    right: -3%;
+    opacity: 0.5;
+    margin-top: 90px;
+    transform: rotate(-20deg);
+
+    animation-name: mapAnimation;
+    animation-duration: 8s;
+    animation-play-state: running;
+    animation-delay: 0;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+}
+
+@keyframes mapAnimation {
+    0%{ opacity: 0.5; }
+    25%{ opacity: 1; }
+    75%{ opacity: 1; }
+    100%{ opacity: 0.5; }
+}

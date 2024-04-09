@@ -1,0 +1,136 @@
+.node
+{
+    width: 36px;
+    height: 36px;
+
+    border: 1px solid #959fa5;
+}
+
+.node-start {
+    background-image: url("C:\Users\siddh\OneDrive\Desktop\SPF\shortestpathvisualizer\src\images\startpoint1.jpg");
+    background-size:contain;
+    transform: rotate(90deg);
+}
+
+.node-finish {
+    background-image: url("C:\Users\siddh\OneDrive\Desktop\SPF\shortestpathvisualizer\src\images\endpoint.jpg");
+    background-size: cover;
+}
+
+.node-wall {
+    
+    background-image: url("C:\Users\siddh\OneDrive\Desktop\SPF\shortestpathvisualizer\src\images\wall1.jpg");
+    background-size:contain;
+}
+
+.node-flag {
+    background-image: url("C:\Users\siddh\OneDrive\Desktop\SPF\shortestpathvisualizer\src\images\flag.JPG");
+    background-size:contain;
+}
+
+.node-weight {
+    background-image: url("C:\Users\siddh\OneDrive\Desktop\SPF\shortestpathvisualizer\src\images\weights.jpg");
+    background-size: 32px;
+}
+
+.node-visited {
+    animation-name: visitedAnimation;
+    animation-duration: 2s;
+    animation-play-state: running;
+    animation-timing-function: ease-out;
+    animation-delay: 0;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    /* animation-fill-mode: forwards; */
+    animation-fill-mode: backwards;
+}
+
+@keyframes visitedAnimation {
+    0% { background-color: #f97676; }
+    50% { background-color: #e763ce; }
+    75% { background-color: #e6087b; }
+    100% { background-color: #e24656; }
+}
+
+.node-visitedWeight {
+    animation-name: visitedWeightAnimation;
+    animation-duration: 1s;
+    animation-play-state: running;
+    animation-timing-function: ease-out;
+    animation-delay: 0;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+}
+
+@keyframes visitedWeightAnimation
+{
+    0% { background-color: #54c8e2; }
+    50% { background-color: #889bd4; }
+    75% { background-color: #946fe3; }
+    100% { opacity: .75; background-color: #624def;}
+}
+
+.node-path
+{
+    animation-name: shortestPathAnimation;
+    animation-duration: 1.5s;
+    animation-play-state: running;
+    animation-timing-function: ease-out;
+    animation-delay: 0;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+}
+.startup
+{
+    background-image: url("C:\Users\siddh\OneDrive\Desktop\SPF\shortestpathvisualizer\src\images\startpoint1.jpg");
+    background-size:contain;
+}
+
+.startdown
+{
+    background-image: url("C:\Users\siddh\OneDrive\Desktop\SPF\shortestpathvisualizer\src\images\startpoint1.jpg");
+    background-size:contain;
+    transform: rotate(180deg);
+}
+
+.startleft
+{
+    background-image: url("C:\Users\siddh\OneDrive\Desktop\SPF\shortestpathvisualizer\src\images\startpoint1.jpg");
+    background-size:contain;
+    transform: rotate(-90deg);
+}
+
+.startright
+{
+    background-image: url("C:\Users\siddh\OneDrive\Desktop\SPF\shortestpathvisualizer\src\images\startpoint1.jpg");
+    background-size:contain;
+    transform: rotate(90deg);
+}
+
+@keyframes shortestPathAnimation
+{
+    0% { background-color: #bd6eef; }
+    60% { background-color: #b244cb; }
+    100% { background-color: #cc089e; }
+}
+
+.node-path-weight
+{
+    animation-name: shortestPathAnimationWeight;
+    animation-duration: 1.5s;
+    animation-play-state: running;
+    animation-timing-function: ease-out;
+    animation-delay: 0;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+}
+
+@keyframes shortestPathAnimationWeight
+{
+    0% { background-color: #82f089; }
+    60% { background-color: #30bd6d; }
+    100% { opacity: .75; background-color: #1ac90a; }
+}
